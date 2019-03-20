@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <Title>A general example reference</Title>
+    <!--Styles can be defined in the head-->
+    <!--Padding is between border and text-->
+    <!--Margin is between border and other elements-->
+    <style>
+      h4 {color:dodgerblue; 
+          border:2px solid firebrick;
+          padding: 10px; 
+          margin: 20px;
+          }
+      #p01
+      {
+        color: magenta;
+        font-size: 200%;
+        font-family: fantasy;
+      }
+      p.error{
+        color: red;
+        }
+      
+      a:link{
+        color: seagreen;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited{
+        color: palevioletred;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover{
+        color: green;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active{
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table tr:nth-child(even)
+      {
+        background-color: #dddddd
+      }
+      table tr:nth-child(odd)
+      {
+        background-color: #ffffff
+      }
+      
+      ul.head{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #555555
+      }
+      li.head {
+        float: left;
+      }
+      li.head a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+      li.head a:hover{
+        background: #333333
+      }
+    </style>
+    <!--Example of how to link to external stylesheet
+    <link rel="stylesheet" href="styles.css">
+    -->
+  </head>
+  <body>
+    <ul class="head">
+      <li class="head"><a href="https://www.google.com" target="_blank">Google</a></li>
+      <li class="head"><a href="https://www.amazon.com" target="_blank">Amazon</a></li>
+      <li class="head"><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+    </ul>
+    <br>
+    <ol type="A">
+      <li>coffe</li>
+      <li>soda</li>
+      <li>beer</li>
+    </ol>
+    <table style="width:25%">
+      <Caption>Poor mans facebook</Caption>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th colspan="2">Friends</th>
+      </tr>
+      <tr>
+        <td>Barrett</td>
+        <td>Bryson</td>
+        <td>Emily</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>Jane</td>
+        <td>Tod</td>
+      </tr>
+    </table>
+    <!--html image mapping actually seems really cool-->
+    <a href="#list">Jump to the list</a>
+    <p class="error">error text</p>
+    <p id="p01">I am very special</p>
+    <!-- look my first comment, probably should use these more-->
+    <bdo dir="rtl">this text is BACKWARDS woah dude!</bdo>
+    <p> this is a <cite>citation</cite> example </p>
+    <address>
+      Barrett Bryson<br>
+      123 Seasame St.<br>
+      Fake, FK 56789<br>
+    </address>
+    <q>this is an example of a short quotation</q>
+    <blockquote>
+      This is for a much longer quote. but simply put a codec is a scheme to encode and decode sound.
+      Many support a large number of bit rates. Most people would be hard pressed to tell the difference between different encoders.
+      Higher end gear will make the difference more pronounced.
+    </blockquote>
+    <p>Here is an example of an abbreviation: <abbr title="World Health Organization">WHO</abbr> that was founded in 1948</p>
+    <h2>A bunch of examples of various text styles</h2>
+    <ul>
+      <li><b>bold</b></li>
+      <li><strong>strong</strong></li>
+      <li><i>italicized</i></li>
+      <li><em>emphasized</em></li>
+      <li>that <small>text</small> is smaller</li>
+      <li><mark>marked</mark></li>
+      <li><del>deleted</del></li>
+      <li><ins>inserted</ins></li>
+      <li>that <sub>text</sub> is subscripted</li>
+      <li>that <sup>text</sup> is superscripted</li>
+    </ul>
+    <p style="color:lightsteelblue; background:maroon; text-align: center">Some very stylized text</p>
+    <a href="https://www.xkcd.com" title="Alt text for link" target="_blank">Link example</a>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <hr>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p style="color:red" title="turns out these can go on almost anything">Main body text. Now in the color red</p>
+    <img src="../static/icon.png" alt="This is an image" width=100 height=100/> <br>
+    <button>Click Me!</button>
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <pre style="background-color:lightgray">
+      This will
+
+      preserve    my odd   choices 
+      of spacing  for preformatted text
+    </pre>
+  </body>
+</html>
